@@ -11,14 +11,16 @@
 		article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
 			{display:block;} 
 		body
-			{line-height:1; font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;} 
+			{line-height:1; font:normal 0.9em/1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background-image:url('as.jpg')} 
+} 
 		ol,ul
 			{list-style:none;} 
 		#frame
-			{max-width:620px;width:100%;border:1px solid #ccc;background:#eee;padding:10px;} 
+			{margin-left: 300px; margin-right: 300px; margin-top: 50px; height: 500px;} 
 		#content
 			{font:normal normal 1em/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;margin:0 40px 10px;} 
-		h1{font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;text-align:center;background:#FFDD08;padding:0 15px;width:auto}
+		h1{font:normal bold 2em/1.8em "Helvetica Neue", Helvetica, Arial, sans-serif;text-align:center;background:#F77F08;padding:0 15px;width:auto}
 		h2{font:italic bold 1.3em/1.2em "Helvetica Neue", Helvetica, Arial, sans-serif;padding:5px 15px 15px;} 
 		input[type=radio]{margin:0 10px 5px -22px;} label{margin:0 0 5px;}
 		#score p
@@ -176,7 +178,7 @@
 				}
 				
 				document.getElementById('explanation').innerHTML += '<p>' + quiz[currentQuestion]["explanation"] + '</p>';
-				document.getElementById('score').innerHTML = '<p>score: '+ score +' right answers out of ' + quiz.length +' possible</p>';
+				document.getElementById('score').innerHTML = '<p>Nilai: '+ score +' jawaban benar dari ' + quiz.length +' pertanyaan </p>';
 				
 				
 			} else { //rubah tampilan dan bergerak ke pertanyaan berikutnya
@@ -222,8 +224,12 @@
 	
 </head>
 <body>
-	<div id="frame" style="margin-left: 300px; margin-right: 300px; margin-top: 100px;">
 
+	<div id="container">
+	<div id="header">
+    	<h1><a href="index.html"><strong>>> HOME <<</strong></a></a></h1>
+                 </div>
+   
 		<h1>Multiple Quiz TIK</h1>
 		<div id="score"><p>Nilai Anda : 0 jawaban Benar, dari 0 Soal</p></div>
 		<h2 id="question">Pertanyaan Disini</h2>
